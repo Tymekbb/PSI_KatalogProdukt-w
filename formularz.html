@@ -7,9 +7,21 @@
 </head>
 <body>
     <form action="skrypt.php" method="post">
-        <input type="text" name=""imie">
+        <input type="text" name=""imie" placeholder="michal">
 
         <input type="submit" value="wyślij">
+
+        <input type="email" name="email" value="jan@kowalski.pl" autocomplete="email">
+
+        <input type="number" name="wiek" min="18" max="100">
+
+        <input type="tel" name="telefon" maxlenght="12">
+
+        <input type="password" name="haslo">
+
+        <input type="date" name="termin">
+
+        <textarea name="wiadomosc" rows="6" cols="40"></textarea>
 
         <button type="submit">wyślij</button>
 
