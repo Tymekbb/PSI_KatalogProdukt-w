@@ -21,7 +21,24 @@
 
         <input type="date" name="termin">
 
+        <input type="radio" name="plec" value="M" checked> Mężczyzna
+
+        <input type="radio" name="plec" value="M" checked> Kobieta
+
+        <input type="checkbox" name="ZgodaReklamowa" value="tak"> Wyrażam zgodę na reklamy
+
+        <input type="checkbox" name="ZgodaRegulamin" value="tak" required> Akceptuje regulamin
+
+            <select name="kategoria">
+                <option value="" disable selected>wybierz kategorię</option>
+                <option value="elektronika">Elektronika</option>
+                <option value="odzież">odzież</option>
+                <option value="książki">książki</option>
+            </select> 
+
         <textarea name="wiadomosc" rows="6" cols="40"></textarea>
+
+        <input type="submit" value="wyślij">
 
         <button type="submit">wyślij</button>
 
