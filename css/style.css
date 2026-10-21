@@ -1,0 +1,16 @@
+h1 {
+            color: red;
+    }
+body {
+    background-color: #5c76a7;
+    font-family: Arial, sans-serif;
+    }
+    main{
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }  
+    .menu {
+        list-style-type: none;
+    }
