@@ -5,7 +5,17 @@ body {
     margin: 0;
     padding: 20px;
 }
+:root {
+    --kolor-glowny: #1E0EDE;
+    --kolor-akcent: #3A067F;
+    --kolor-tekstu: #0F1237;
+    --kolor-tło: #f9f9f9;
+    --kolor-obramowanie: #EA3A3C;
 
+    --odstep-maly: 8px;
+    --odstep-sredni: 16px;
+    --odstep-duzy: 32px;
+}
 .srodek {
     width: 1100px; 
     margin: 0 auto; 
