@@ -47,22 +47,44 @@ h3 {
     padding: var(--odstep-duzy);
     border: 1px solid var(--kolor-obramowania);
     box-shadow: 2px 2px 10px var(--kolor-cienia);
-    flex-wrap: wrap;
 }
 
 header.naglowek-strony {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; 
+    gap: var(--odstep-sredni);
+}
+
+
+header nav {
+    flex: 1;
 }
 
 .menu-glowne ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; 
     gap: var(--odstep-maly);
     align-items: center;
     list-style: none;
     padding-left: 0;
+    margin: 0;
+}
+
+
+.menu-glowne ul li:last-child {
+    flex: 1;
+    min-width: 150px;
+}
+
+
+.menu-glowne ul li input {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid var(--kolor-obramowania);
+    border-radius: 4px;
 }
 
 .menu-glowne a {
@@ -92,7 +114,7 @@ img {
 .karty-produktow {
     display: flex;
     gap: var(--odstep-maly);
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 .karta {
@@ -100,8 +122,10 @@ img {
     border: 1px solid var(--kolor-obramowania);
     border-radius: 6px;
     padding: var(--odstep-sredni);
-    margin: var(--odstep-sredni) 0;
     box-shadow: 0px 2px 6px var(--kolor-cienia);
+    
+    
+    flex: 1 0 200px; 
 }
 
 .karta:hover {
@@ -112,12 +136,21 @@ figure {
     margin: 0;
 }
 
-
 .stopka {
     margin-top: var(--odstep-duzy);
     padding: var(--odstep-sredni);
     background-color: var(--kolor-akcent);
-    color: #f30505;
+    color: var(--kolor-tekstu);
     text-align: center;
     border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap: var(--odstep-duzy);
+}
+
+
+.stopka div {
+    min-width: 200px;
+    flex: 1;
 }
