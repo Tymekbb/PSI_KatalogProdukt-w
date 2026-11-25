@@ -1,6 +1,6 @@
 :root {
     --kolor-glowny: #1E0EDE;
-    --kolor-akcent: #3A067F;
+    --kolor-akcent: #07ec07;
     --kolor-tekstu: #0F1237;
     --kolor-tlo: #f9f9f9;
     --kolor-kontenera: #ffffff;
@@ -13,7 +13,6 @@
     --odstep-duzy: 32px;
 }
 
-/* Wymóg z listy: box-sizing na początku */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -28,7 +27,6 @@ body {
     line-height: 1.5;
 }
 
-/* Podstawowe nagłówki bez zbędnych bajerów */
 h1 {
     color: var(--kolor-glowny);
 }
@@ -41,7 +39,6 @@ h3 {
     color: var(--kolor-tekstu);
 }
 
-/* Elastyczny kontener zamiast sztywnej szerokości */
 .kontener {
     width: 100%;
     max-width: 1100px;
@@ -50,14 +47,22 @@ h3 {
     padding: var(--odstep-duzy);
     border: 1px solid var(--kolor-obramowania);
     box-shadow: 2px 2px 10px var(--kolor-cienia);
+    flex-wrap: wrap;
 }
 
-/* Listy i menu */
-.menu-glowne ul, 
-ol {
-    display: inline-block;
-    text-align: left;
-    padding-left: var(--odstep-duzy);
+header.naglowek-strony {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-glowne ul {
+    display: flex;
+    flex-direction: row;
+    gap: var(--odstep-maly);
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
 }
 
 .menu-glowne a {
@@ -70,17 +75,26 @@ ol {
     text-decoration: underline;
 }
 
-/* Obrazy */
+ol {
+    display: inline-block;
+    text-align: left;
+    padding-left: var(--odstep-duzy);
+}
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: var(--odstep-sredni) auto;
-    box-shadow: 0px 4px 8px var(--kolor-cienia-karty);
     border-radius: 4px;
 }
 
-/* Karty produktów */
+.karty-produktow {
+    display: flex;
+    gap: var(--odstep-maly);
+    flex-wrap: wrap;
+}
+
 .karta {
     background-color: var(--kolor-kontenera);
     border: 1px solid var(--kolor-obramowania);
@@ -96,4 +110,14 @@ img {
 
 figure {
     margin: 0;
+}
+
+
+.stopka {
+    margin-top: var(--odstep-duzy);
+    padding: var(--odstep-sredni);
+    background-color: var(--kolor-akcent);
+    color: #f30505;
+    text-align: center;
+    border-radius: 4px;
 }
